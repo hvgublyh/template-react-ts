@@ -22,5 +22,8 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "rules": {
+    "no-implicit-dependencies": ["optional", ["src"]] // 提示地址
+  }
 }

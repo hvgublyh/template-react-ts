@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux'
 import './App.css';
-import Page1 from './pages/page1'
 import SelfTable from './components/selfTable'
 import {appData} from './axios/api'
 
@@ -31,7 +30,6 @@ function App(this: any) {
   }, [value, dispatch])
   return (
     <div className="App">
-      <Page1 value={value} setValue={setValue}></Page1>
       {userState.user}
       
       <SelfTable></SelfTable>

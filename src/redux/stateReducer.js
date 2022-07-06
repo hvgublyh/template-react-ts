@@ -1,7 +1,9 @@
 import { createReducer } from "@reduxjs/toolkit";
+import message from '../assert/js/message'
 
 const state = {
-    user: ''
+    user: '',
+    message
 }
 
 
@@ -10,6 +12,6 @@ export const userState = createReducer(state,{
     'login':(state,action) => {
         state.user = action.payload;
     },
-    'logout' : (state) => {state.user = ''}
+    'logout' : (state) => {state.user = ''},
 })
 

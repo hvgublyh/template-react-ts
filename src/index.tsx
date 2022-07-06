@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import './assert/css/tailwind.css'
+import CV from './pages/cv/Cv'
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
 import { Route, Routes, BrowserRouter } from "react-router-dom"
@@ -16,7 +17,9 @@ root.render(
     <Provider store={store} >
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />} >
+          <Route path="/cv" element={<CV />} >
+          </Route>
+          <Route element={<CV />} >
           </Route>
         </Routes>
       </BrowserRouter>
