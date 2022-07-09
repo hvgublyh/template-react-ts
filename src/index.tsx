@@ -19,7 +19,7 @@ root.render(
         <Routes>
           <Route path="/cv" element={<CV />} >
           </Route>
-          <Route element={<CV />} >
+          <Route path="/" element={<CV />} >
           </Route>
         </Routes>
       </BrowserRouter>

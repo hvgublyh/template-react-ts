@@ -1,12 +1,13 @@
 import { useSelector } from 'react-redux'
+import {Message} from '../../../assert/ts/MessageType'
 
 
 function Header() {
-  const UserState = useSelector((state: any) => state.userState)
+  const message: Message = useSelector((state: any) => state.userState.message)
   return (
     <div className="header">
       <div className="text-center">
-        {UserState.header.name}
+        {message.header.name}
       </div>
     </div>
   );

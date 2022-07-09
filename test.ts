@@ -1,30 +1,12 @@
-// // interface
-// interface User {
-//   name: string;
-//   year: number;
-// }
-// class UserAccount {
-//   name: string;
-//   year: number;
+interface Backpack<Type> {
+  add: (obj: Type) => void;
+  get: () => Type;
 
-//   constructor(name: string, year: number) {
-//     this.name = name;
-//     this.year = year;
-//   }
-// }
-// const user: User = new UserAccount('tom', 11);
-
-// type
-type userState = 'start' | 'end';
-const type: userState = 'start';
-
-// declare
-// interface Backpack<Type> {
-//   get: () => Type;
-//   add: (number: number) => void;
-// }
-
-// declare const backpack: Backpack<String>;
-
-// backpack.get();
-// backpack.add(23);
+}
+// This line is a shortcut to tell TypeScript there is a 
+// constant called •backpack- , 
+declare const backpack:Backpack<string>;
+  // object is a string, because we declared it above as the variable part of Backpack. 
+const object = backpack.get();
+// Since the backpack variable is a string, you can't pass a number to the add function. 
+backpack.add('123');
