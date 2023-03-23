@@ -1,13 +1,26 @@
 import { useSelector } from 'react-redux'
-import {Message} from '../../../assert/ts/MessageType'
+import { TypeHeader } from '../../../assert/ts/MessageType'
+import { TypeStore } from '../../../redux/TypeStore';
 
+import css from  './css/header.module.scss'
 
 function Header() {
-  const message: Message = useSelector((state: any) => state.userState.message)
+  const header: TypeHeader = useSelector((state: TypeStore) => state.userState.message.header)
   return (
-    <div className="header">
-      <div className="text-center">
-        {message.header.name}
+    <div className={css.header + ' clearfix'}>
+      <div className="fl">
+        <div className="text-center">
+          {header.name}
+        </div>
+        <ul>
+          {header.messages.map(message => (
+            <li>{message}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className= {css.header_img + ' fr'}>
+
       </div>
     </div>
   );

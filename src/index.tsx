@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store} >
-      <BrowserRouter>
+      <BrowserRouter basename="" >
         <Routes>
           <Route path="/cv" element={<CV />} >
           </Route>
@@ -25,7 +25,6 @@ root.render(
       </BrowserRouter>
     </Provider>
   </React.StrictMode>
-
 );
 
 // If you want to start measuring performance in your app, pass a function
