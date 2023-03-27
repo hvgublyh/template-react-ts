@@ -1,0 +1,32 @@
+.cv {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  padding: 10px;
+
+  :global {
+    font-size: 14px;
+    line-height: 24px;
+
+    .fl {
+      float: left;
+    }
+    .fr {
+      float: right;
+    }
+
+    .clearfix {
+      *zoom: 1;
+    }
+
+    h1 {
+      font-size: 20px;
+      line-height: 32px;
+      margin: 10px 0 0 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

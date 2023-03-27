@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className={css.header + ' clearfix'}>
       <div className="fl">
-        <div className="text-center">
+        <div className="text-center name">
           {header.name}
         </div>
         <ul>
@@ -19,7 +19,7 @@ function Header() {
         </ul>
       </div>
 
-      <div className= {css.header_img + ' fr'}>
+      <div className='header_img fr'>
 
       </div>
     </div>

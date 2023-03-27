@@ -8,13 +8,13 @@ function Experience() {
 
   return (
     <div className={css.experiences}>
+      <h1>experience</h1>
       {experiences.map((experience) => (
-        <div className={css.experience}>
-          <div className={css.detail + ' clearfix'}>
-            <div className='fl'>{experience.startTime + '-' + experience.endTime}</div>
-            <div className='fr'>{experience.company}</div>
+        <div className='experience'>
+          <div className='info clearfix'>
+            <div className='fl company'>{experience.company}</div>
+            <div className='fr startTime'>{experience.startTime + '-' + experience.endTime}</div>
           </div>
-          <div className={css.position}>{experience.position}</div>
           {experience.project.map((project) => (
             <div className='project'>
               <div className='name'>{project.name}</div>

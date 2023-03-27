@@ -1,12 +1,34 @@
 .experiences {
-  .experience {
-    .detail {
+  :global {
+    .experience {
+      .info {
+        margin-top: 10px;
+        font-size: 16px;
+        .company {
+          font-weight: bold;
+        }
+      }
+  
+      
 
-    }
-    .position {
-    }
+      .project {
+        margin-top: 10px;
+        .name {
+          font-size: 16px;
+          font-weight: bold;
+        }
 
-    .title {
+        .title {
+          float: left;
+          font-size: 16px;
+          margin-right: 20px;
+          min-width: 60px;
+        } 
+        .detail {
+          overflow: hidden;
+        }
+      }
+
     }
   }
 }

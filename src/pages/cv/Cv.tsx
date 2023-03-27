@@ -3,11 +3,11 @@ import Education from './component/Education';
 import Skill from './component/Skill';
 import Experience from './component/Experience';
 
-import './css/cv.module.scss'
+import css from './css/cv.module.scss'
 
 function CV() {
   return (
-    <div className='cv'>
+    <div className={css.cv}>
       <Header></Header>
       <Education></Education>
       <Skill></Skill>
